@@ -24,8 +24,9 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build docker image
       run: | 
-        echo "building the image"
+        echo "building the images"
         docker build -t williansrb81/graphql:0.0.2 .
+        docker build -t williansrb81/graphql:latest .
     - name: push image to docker
       run: |
         echo "pushing the image to docker hub"
