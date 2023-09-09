@@ -30,6 +30,7 @@ jobs:
       run: |
         echo "pushing the image to docker hub"
         docker push williansrb81/graphql:0.0.2
+        docker push williansrb81/graphql:latest
       
         
 #   - name: Build the Docker image
